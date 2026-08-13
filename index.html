@@ -1,14 +1,14 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Md Mobashwer Ali | HR Professional & Branding Specialist</title>
-    <meta name="description" content="Md Mobashwer Ali - Strategic HR Professional and Branding Specialist based in Rangpur, Bangladesh.">
+    <title>Md Mobashwer Ali | Talent Acquisition & Strategic HR Specialist</title>
+    <meta name="description" content="Portfolio of Md Mobashwer Ali - Talent Acquisition Specialist, Strategic HR Professional, and Branding Expert focusing on scalable workforce solutions and operational compliance.">
     
-    <!-- Open Graph Tags for Professional Social Sharing -->
-    <meta property="og:title" content="Md Mobashwer Ali | HR Professional & Branding Specialist">
-    <meta property="og:description" content="Combining engineering precision with HR expertise to manage mass recruitment, ERP data, and factory compliance.">
+    <!-- Open Graph Tags -->
+    <meta property="og:title" content="Md Mobashwer Ali | Talent Acquisition & Strategic HR Specialist">
+    <meta property="og:description" content="Driving high-volume recruitment pipelines, employer branding, and data-backed workforce strategies.">
     <meta property="og:image" content="https://i.postimg.cc/kBcdqGrN/Md-Mobashwer-Ali.jpg">
     <meta property="og:type" content="website">
 
@@ -16,53 +16,50 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;700&display=swap');
-        
-        :root { scroll-behavior: smooth; }
+        @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap');
         body { font-family: 'Plus Jakarta Sans', sans-serif; }
-        
-        .gradient-dark { background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%); }
-        
-        .logo-circle {
-            border: 2px solid #ffffff; 
-            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+        .gradient-hero { background: linear-gradient(135deg, #090d16 0%, #1e293b 100%); }
+        .profile-img {
+            border: 3px solid #3b82f6;
+            box-shadow: 0 10px 25px -5px rgba(59, 130, 246, 0.3);
             border-radius: 50%;
             overflow: hidden;
-            background-color: #ffffff;
             object-fit: cover;
             aspect-ratio: 1 / 1;
         }
-
         #mobile-menu {
             transition: all 0.3s ease-in-out;
             max-height: 0;
             overflow: hidden;
         }
         #mobile-menu.open {
-            max-height: 500px;
+            max-height: 400px;
             padding: 1rem 0;
         }
-
-        .scroll-mt-nav { scroll-margin-top: 80px; }
+        .scroll-offset { scroll-margin-top: 90px; }
     </style>
 </head>
 <body class="bg-slate-50 text-slate-900 pb-20 md:pb-0">
 
-    <nav class="fixed w-full bg-white/95 backdrop-blur-md z-50 border-b border-slate-200">
+    <!-- Navigation -->
+    <nav class="fixed w-full bg-white/90 backdrop-blur-md z-50 border-b border-slate-200 shadow-xs">
         <div class="max-w-6xl mx-auto px-6 py-4">
             <div class="flex justify-between items-center">
-                <a href="#about" class="flex items-center gap-3">
-                    <img src="https://i.postimg.cc/kBcdqGrN/Md-Mobashwer-Ali.jpg" alt="Logo" class="w-10 h-10 logo-circle">
-                    <span class="font-bold text-lg md:text-xl tracking-tight text-slate-800">Md Mobashwer Ali</span>
+                <a href="#about" class="flex items-center gap-3 group">
+                    <img src="https://i.postimg.cc/kBcdqGrN/Md-Mobashwer-Ali.jpg" alt="Md Mobashwer Ali" class="w-10 h-10 rounded-full object-cover border border-blue-500">
+                    <div class="flex flex-col">
+                        <span class="font-bold text-base md:text-lg tracking-tight text-slate-900 group-hover:text-blue-600 transition">Md Mobashwer Ali</span>
+                        <span class="text-[10px] text-slate-500 uppercase tracking-widest font-semibold">Talent & HR Professional</span>
+                    </div>
                 </a>
 
-                <div class="hidden md:flex items-center space-x-6 text-xs font-bold uppercase tracking-wider">
+                <div class="hidden md:flex items-center space-x-8 text-xs font-bold uppercase tracking-wider text-slate-600">
                     <a href="#about" class="hover:text-blue-600 transition">About</a>
-                    <a href="#skills" class="hover:text-blue-600 transition">Skills</a>
-                    <a href="#experience" class="hover:text-blue-600 transition">Operations</a>
-                    <a href="#education" class="hover:text-blue-600 transition">Education</a>
-                    <a href="https://drive.google.com/file/d/1_VNpJ7nk6cPQeAmeaJNS8Y6UsWe8PqAv/view?usp=sharing" target="_blank" class="bg-slate-900 text-white px-4 py-2 rounded-lg hover:bg-blue-600 transition">
-                        CV
+                    <a href="#expertise" class="hover:text-blue-600 transition">Talent Stack</a>
+                    <a href="#metrics" class="hover:text-blue-600 transition">Impact</a>
+                    <a href="#education" class="hover:text-blue-600 transition">Credentials</a>
+                    <a href="https://drive.google.com/file/d/1_VNpJ7nk6cPQeAmeaJNS8Y6UsWe8PqAv/view?usp=sharing" target="_blank" class="bg-blue-600 text-white px-4 py-2.5 rounded-lg hover:bg-blue-700 transition shadow-sm">
+                        <i class="fas fa-file-alt mr-1"></i> Resume
                     </a>
                 </div>
 
@@ -71,117 +68,173 @@
                 </button>
             </div>
 
-            <div id="mobile-menu" class="md:hidden flex flex-col space-y-4 text-sm font-bold uppercase tracking-wider">
+            <div id="mobile-menu" class="md:hidden flex flex-col space-y-3 text-xs font-bold uppercase tracking-wider border-t border-slate-100 mt-3">
                 <a href="#about" class="mobile-link pt-2 hover:text-blue-600 transition">About</a>
-                <a href="#skills" class="mobile-link hover:text-blue-600 transition">Skills</a>
-                <a href="#experience" class="mobile-link hover:text-blue-600 transition">Operations</a>
-                <a href="#education" class="mobile-link hover:text-blue-600 transition">Education</a>
+                <a href="#expertise" class="mobile-link hover:text-blue-600 transition">Talent Stack</a>
+                <a href="#metrics" class="mobile-link hover:text-blue-600 transition">Impact</a>
+                <a href="#education" class="mobile-link hover:text-blue-600 transition">Credentials</a>
+                <a href="https://drive.google.com/file/d/1_VNpJ7nk6cPQeAmeaJNS8Y6UsWe8PqAv/view?usp=sharing" target="_blank" class="text-blue-600 pt-1">View Full Resume &rarr;</a>
             </div>
         </div>
     </nav>
 
-    <header id="about" class="pt-32 pb-16 px-6 gradient-dark text-white border-b-4 border-blue-600">
-        <div class="max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-8 md:gap-12">
+    <!-- Hero Section -->
+    <header id="about" class="pt-36 pb-20 px-6 gradient-hero text-white relative overflow-hidden">
+        <div class="absolute -right-20 -top-20 w-96 h-96 bg-blue-600/10 rounded-full blur-3xl pointer-events-none"></div>
+        <div class="max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-10 md:gap-16 relative z-10">
             <div class="text-center shrink-0">
-                <img src="https://i.postimg.cc/kBcdqGrN/Md-Mobashwer-Ali.jpg" alt="Profile" class="w-32 h-32 md:w-48 md:h-48 mx-auto logo-circle mb-4">
-                <div class="inline-block bg-blue-600 px-4 py-1 rounded-full text-[10px] font-bold uppercase tracking-widest">Available for Hire</div>
+                <img src="https://i.postimg.cc/kBcdqGrN/Md-Mobashwer-Ali.jpg" alt="Md Mobashwer Ali Profile" class="w-36 h-36 md:w-48 md:h-48 mx-auto profile-img mb-4">
+                <div class="inline-flex items-center gap-2 bg-emerald-500/10 border border-emerald-500/30 text-emerald-400 px-3.5 py-1 rounded-full text-[11px] font-bold uppercase tracking-widest">
+                    <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span> Open to Talent Roles
+                </div>
             </div>
             <div class="text-center md:text-left">
-                <h1 class="text-3xl md:text-5xl font-extrabold mb-4 leading-tight">Strategic HR & <br><span class="text-blue-500">Creative Branding</span></h1>
-                <p class="text-slate-300 text-sm md:text-lg leading-relaxed max-w-2xl">
-                    Combining engineering precision with HR expertise to manage mass recruitment, ERP data, and factory compliance while driving modern employer branding.
+                <span class="text-blue-400 font-bold text-xs uppercase tracking-widest block mb-2">Talent Acquisition & Employer Branding Specialist</span>
+                <h1 class="text-3xl md:text-5xl font-extrabold mb-4 leading-tight tracking-tight">
+                    Connecting <span class="text-blue-500 underline decoration-blue-500/40 underline-offset-8">Right-Fit Talent</span> to Scalable Operations
+                </h1>
+                <p class="text-slate-300 text-sm md:text-base leading-relaxed max-w-2xl mb-6">
+                    Specialized in high-volume sourcing, full-cycle recruitment pipelines, structural compliance, and employer branding that attracts high-caliber candidates from worker tiers to technical staff.
                 </p>
+                <div class="flex flex-wrap justify-center md:justify-start gap-3">
+                    <a href="https://wa.me/8801581045958" class="bg-blue-600 hover:bg-blue-700 text-white px-5 py-3 rounded-xl font-bold text-xs uppercase tracking-wider transition flex items-center gap-2">
+                        <i class="fab fa-whatsapp text-sm"></i> Let's Connect
+                    </a>
+                    <a href="mailto:ali.epichr@hotmail.com" class="bg-slate-800 hover:bg-slate-700 text-slate-200 border border-slate-700 px-5 py-3 rounded-xl font-bold text-xs uppercase tracking-wider transition flex items-center gap-2">
+                        <i class="fas fa-envelope text-sm"></i> Send Email
+                    </a>
+                </div>
             </div>
         </div>
     </header>
 
-    <section id="skills" class="py-12 px-6 bg-white border-b border-slate-100 scroll-mt-nav">
+    <!-- Core Competencies / Talent Stack -->
+    <section id="expertise" class="py-16 px-6 bg-white scroll-offset border-b border-slate-100">
         <div class="max-w-6xl mx-auto">
-            <h2 class="text-xl md:text-2xl font-bold mb-8 uppercase border-l-4 border-blue-600 pl-4">Core Skills</h2>
-            <div class="grid md:grid-cols-2 gap-8">
-                <div>
-                    <h3 class="font-bold text-blue-600 text-xs uppercase mb-4 tracking-widest">HR & Operations</h3>
-                    <div class="flex flex-wrap gap-2">
-                        <span class="px-3 py-1.5 bg-slate-50 border border-slate-200 rounded-lg text-xs font-semibold">Mass Recruitment</span>
-                        <span class="px-3 py-1.5 bg-slate-50 border border-slate-200 rounded-lg text-xs font-semibold">Labor Law</span>
-                        <span class="px-3 py-1.5 bg-slate-50 border border-slate-200 rounded-lg text-xs font-semibold">ERP Management</span>
-                        <span class="px-3 py-1.5 bg-slate-50 border border-slate-200 rounded-lg text-xs font-semibold">Factory Compliance</span>
+            <div class="mb-10 text-center md:text-left">
+                <span class="text-blue-600 font-bold text-xs uppercase tracking-widest">Core Capabilities</span>
+                <h2 class="text-2xl md:text-3xl font-extrabold text-slate-900 mt-1">The Recruitment & HR Stack</h2>
+            </div>
+            <div class="grid md:grid-cols-3 gap-6">
+                <!-- Card 1 -->
+                <div class="p-6 rounded-2xl bg-slate-50 border border-slate-200 hover:border-blue-500/50 transition group">
+                    <div class="w-12 h-12 rounded-xl bg-blue-600/10 text-blue-600 flex items-center justify-center text-xl mb-4 group-hover:bg-blue-600 group-hover:text-white transition">
+                        <i class="fas fa-users-viewfinder"></i>
+                    </div>
+                    <h3 class="font-bold text-base mb-2 text-slate-900">Full-Cycle Recruitment</h3>
+                    <p class="text-xs text-slate-600 leading-relaxed mb-4">
+                        Executing mass sourcing, screening, panel evaluations, and seamless onboarding pipelines across multiple organizational tiers.
+                    </p>
+                    <div class="flex flex-wrap gap-1.5">
+                        <span class="text-[10px] bg-white border border-slate-200 px-2 py-1 rounded font-semibold text-slate-700">Mass Hiring</span>
+                        <span class="text-[10px] bg-white border border-slate-200 px-2 py-1 rounded font-semibold text-slate-700">Screening</span>
+                        <span class="text-[10px] bg-white border border-slate-200 px-2 py-1 rounded font-semibold text-slate-700">Onboarding</span>
                     </div>
                 </div>
-                <div>
-                    <h3 class="font-bold text-blue-600 text-xs uppercase mb-4 tracking-widest">Design & Branding</h3>
-                    <div class="flex flex-wrap gap-2">
-                        <span class="px-3 py-1.5 bg-slate-50 border border-slate-200 rounded-lg text-xs font-semibold">Visual Identity</span>
-                        <span class="px-3 py-1.5 bg-slate-50 border border-slate-200 rounded-lg text-xs font-semibold">Adobe Illustrator</span>
-                        <span class="px-3 py-1.5 bg-slate-50 border border-slate-200 rounded-lg text-xs font-semibold">Photoshop</span>
-                        <span class="px-3 py-1.5 bg-slate-50 border border-slate-200 rounded-lg text-xs font-semibold">Social Media Marketing</span>
+                <!-- Card 2 -->
+                <div class="p-6 rounded-2xl bg-slate-50 border border-slate-200 hover:border-blue-500/50 transition group">
+                    <div class="w-12 h-12 rounded-xl bg-blue-600/10 text-blue-600 flex items-center justify-center text-xl mb-4 group-hover:bg-blue-600 group-hover:text-white transition">
+                        <i class="fas fa-bullhorn"></i>
+                    </div>
+                    <h3 class="font-bold text-base mb-2 text-slate-900">Employer Branding & Visuals</h3>
+                    <p class="text-xs text-slate-600 leading-relaxed mb-4">
+                        Leveraging graphic design, visual identity creation, and targeted outreach materials to build strong organizational attractiveness.
+                    </p>
+                    <div class="flex flex-wrap gap-1.5">
+                        <span class="text-[10px] bg-white border border-slate-200 px-2 py-1 rounded font-semibold text-slate-700">Visual Identity</span>
+                        <span class="text-[10px] bg-white border border-slate-200 px-2 py-1 rounded font-semibold text-slate-700">Illustrator & PS</span>
+                        <span class="text-[10px] bg-white border border-slate-200 px-2 py-1 rounded font-semibold text-slate-700">Social Assets</span>
+                    </div>
+                </div>
+                <!-- Card 3 -->
+                <div class="p-6 rounded-2xl bg-slate-50 border border-slate-200 hover:border-blue-500/50 transition group">
+                    <div class="w-12 h-12 rounded-xl bg-blue-600/10 text-blue-600 flex items-center justify-center text-xl mb-4 group-hover:bg-blue-600 group-hover:text-white transition">
+                        <i class="fas fa-shield-halved"></i>
+                    </div>
+                    <h3 class="font-bold text-base mb-2 text-slate-900">Compliance & ERP Data</h3>
+                    <p class="text-xs text-slate-600 leading-relaxed mb-4">
+                        Managing worker data integrity via ERP platforms, upholding labor regulations, and driving audit-ready factory compliance.
+                    </p>
+                    <div class="flex flex-wrap gap-1.5">
+                        <span class="text-[10px] bg-white border border-slate-200 px-2 py-1 rounded font-semibold text-slate-700">Labor Laws</span>
+                        <span class="text-[10px] bg-white border border-slate-200 px-2 py-1 rounded font-semibold text-slate-700">ERP Tracking</span>
+                        <span class="text-[10px] bg-white border border-slate-200 px-2 py-1 rounded font-semibold text-slate-700">Audit Readiness</span>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="experience" class="py-12 px-6 bg-slate-50 scroll-mt-nav">
+    <!-- Operational Impact / Metrics -->
+    <section id="metrics" class="py-16 px-6 bg-slate-50 scroll-offset">
         <div class="max-w-6xl mx-auto">
-            <h2 class="text-xl md:text-2xl font-bold mb-8 uppercase border-l-4 border-blue-600 pl-4">Operations Mastery</h2>
-            <div class="grid md:grid-cols-3 gap-4 md:gap-6">
-                <div class="p-5 rounded-xl bg-white border border-slate-200 shadow-sm">
-                    <h4 class="font-bold text-md mb-2">Operations & ERP</h4>
-                    <p class="text-xs text-slate-600 leading-relaxed">Precise management of worker files, attendance, and software data entry.</p>
+            <div class="mb-10 text-center md:text-left">
+                <span class="text-blue-600 font-bold text-xs uppercase tracking-widest">Value Delivery</span>
+                <h2 class="text-2xl md:text-3xl font-extrabold text-slate-900 mt-1">Operational Highlights</h2>
+            </div>
+            <div class="grid md:grid-cols-3 gap-6">
+                <div class="p-6 bg-white rounded-2xl border border-slate-200 shadow-xs">
+                    <span class="text-blue-600 font-extrabold text-2xl block mb-1">01 / Pipeline</span>
+                    <h4 class="font-bold text-sm text-slate-900 mb-2">Mass Recruitment Agility</h4>
+                    <p class="text-xs text-slate-600 leading-relaxed">Streamlining high-turnover screening workflows to fill operational vacancies quickly without sacrificing candidate alignment.</p>
                 </div>
-                <div class="p-5 rounded-xl bg-white border border-slate-200 shadow-sm">
-                    <h4 class="font-bold text-md mb-2">Compliance</h4>
-                    <p class="text-xs text-slate-600 leading-relaxed">Specialist in factory audit readiness and safety standard maintenance.</p>
+                <div class="p-6 bg-white rounded-2xl border border-slate-200 shadow-xs">
+                    <span class="text-blue-600 font-extrabold text-2xl block mb-1">02 / Systemic</span>
+                    <h4 class="font-bold text-sm text-slate-900 mb-2">ERP Records & Personnel Data</h4>
+                    <p class="text-xs text-slate-600 leading-relaxed">Maintaining accurate electronic filing structures, attendance files, and systematic workforce documentation.</p>
                 </div>
-                <div class="p-5 rounded-xl bg-white border border-slate-200 shadow-sm">
-                    <h4 class="font-bold text-md mb-2">Recruitment</h4>
-                    <p class="text-xs text-slate-600 leading-relaxed">Full-cycle selection process for worker to staff level tiers.</p>
+                <div class="p-6 bg-white rounded-2xl border border-slate-200 shadow-xs">
+                    <span class="text-blue-600 font-extrabold text-2xl block mb-1">03 / Safety</span>
+                    <h4 class="font-bold text-sm text-slate-900 mb-2">Factory Compliance Standards</h4>
+                    <p class="text-xs text-slate-600 leading-relaxed">Implementing stringent safety guidelines, first-aid response training, and complete labor-law adherence protocols.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="education" class="py-12 px-6 bg-white scroll-mt-nav">
+    <!-- Education & Certifications -->
+    <section id="education" class="py-16 px-6 bg-white border-t border-slate-100 scroll-offset">
         <div class="max-w-6xl mx-auto">
-            <div class="grid md:grid-cols-2 gap-10">
+            <div class="grid md:grid-cols-2 gap-12">
                 <div>
-                    <h2 class="text-xl md:text-2xl font-bold mb-6 flex items-center gap-2">
-                        <i class="fas fa-graduation-cap text-blue-600"></i> Education
+                    <h2 class="text-xl font-extrabold text-slate-900 mb-6 flex items-center gap-2">
+                        <i class="fas fa-graduation-cap text-blue-600"></i> Academic Background
                     </h2>
-                    <div class="space-y-6 border-l-2 border-slate-100 pl-4">
+                    <div class="space-y-6 border-l-2 border-slate-200 pl-4 ml-1">
                         <div class="relative">
-                            <div class="absolute w-3 h-3 bg-blue-600 rounded-full -left-[22px] top-1.5"></div>
-                            <h4 class="font-bold text-sm md:text-base">BBA in HRM</h4>
-                            <p class="text-slate-500 text-xs">Bangladesh Open University</p>
+                            <div class="absolute w-3.5 h-3.5 bg-blue-600 rounded-full -left-[23px] top-1 ring-4 ring-white"></div>
+                            <h4 class="font-bold text-sm md:text-base text-slate-900">BBA in HRM</h4>
+                            <p class="text-slate-500 text-xs mt-0.5">Bangladesh Open University</p>
                         </div>
                         <div class="relative">
-                            <div class="absolute w-3 h-3 bg-blue-600 rounded-full -left-[22px] top-1.5"></div>
-                            <h4 class="font-bold text-sm md:text-base">Diploma in Engineering</h4>
-                            <p class="text-slate-500 text-xs">Thakurgaon Polytechnic Institute</p>
+                            <div class="absolute w-3.5 h-3.5 bg-blue-600 rounded-full -left-[23px] top-1 ring-4 ring-white"></div>
+                            <h4 class="font-bold text-sm md:text-base text-slate-900">Diploma in Engineering</h4>
+                            <p class="text-slate-500 text-xs mt-0.5">Thakurgaon Polytechnic Institute</p>
                         </div>
                         <div class="relative">
-                            <div class="absolute w-3 h-3 bg-blue-600 rounded-full -left-[22px] top-1.5"></div>
-                            <h4 class="font-bold text-sm md:text-base">Dakhil / SSC</h4>
-                            <p class="text-slate-500 text-xs">Osmanpur Fazil Madrasa</p>
+                            <div class="absolute w-3.5 h-3.5 bg-blue-600 rounded-full -left-[23px] top-1 ring-4 ring-white"></div>
+                            <h4 class="font-bold text-sm md:text-base text-slate-900">Dakhil / SSC</h4>
+                            <p class="text-slate-500 text-xs mt-0.5">Osmanpur Fazil Madrasa</p>
                         </div>
                     </div>
                 </div>
+
                 <div>
-                    <h2 class="text-xl md:text-2xl font-bold mb-6 flex items-center gap-2">
-                        <i class="fas fa-certificate text-blue-600"></i> Training
+                    <h2 class="text-xl font-extrabold text-slate-900 mb-6 flex items-center gap-2">
+                        <i class="fas fa-award text-blue-600"></i> Specialized Training
                     </h2>
-                    <div class="grid gap-3">
-                        <div class="p-4 rounded-lg bg-slate-50 border border-slate-100">
-                            <h4 class="font-bold text-xs uppercase">Industrial HR & Admin</h4>
-                            <p class="text-[11px] text-slate-600">Garment sector management & labor laws.</p>
+                    <div class="space-y-3">
+                        <div class="p-4 rounded-xl bg-slate-50 border border-slate-200">
+                            <h4 class="font-bold text-xs uppercase text-slate-900">Industrial HR & Admin</h4>
+                            <p class="text-[11px] text-slate-600 mt-0.5">Garment sector management & specialized labor laws.</p>
                         </div>
-                        <div class="p-4 rounded-lg bg-slate-50 border border-slate-100">
-                            <h4 class="font-bold text-xs uppercase">Graphics Design (ASSET)</h4>
-                            <p class="text-[11px] text-slate-600">Certified in Photoshop, Illustrator, and Canva.</p>
+                        <div class="p-4 rounded-xl bg-slate-50 border border-slate-200">
+                            <h4 class="font-bold text-xs uppercase text-slate-900">Graphics Design (ASSET Program)</h4>
+                            <p class="text-[11px] text-slate-600 mt-0.5">Certified expertise in Photoshop, Illustrator, and Canva assets.</p>
                         </div>
-                        <div class="p-4 rounded-lg bg-slate-50 border border-slate-100">
-                            <h4 class="font-bold text-xs uppercase">Safety & First Aid</h4>
-                            <p class="text-[11px] text-slate-600">Fire Fighting, Rescue, and Prevention training.</p>
+                        <div class="p-4 rounded-xl bg-slate-50 border border-slate-200">
+                            <h4 class="font-bold text-xs uppercase text-slate-900">Safety & First Aid Protocols</h4>
+                            <p class="text-[11px] text-slate-600 mt-0.5">Comprehensive Fire Fighting, Rescue, and Prevention training.</p>
                         </div>
                     </div>
                 </div>
@@ -189,46 +242,48 @@
         </div>
     </section>
 
-    <footer id="contact" class="pt-12 pb-8 gradient-dark text-white px-6 border-t-4 border-blue-600">
+    <!-- Footer / Contact -->
+    <footer id="contact" class="pt-16 pb-12 gradient-hero text-white px-6 border-t-4 border-blue-600">
         <div class="max-w-6xl mx-auto">
-            <div class="grid md:grid-cols-3 gap-8 mb-12 text-center md:text-left">
+            <div class="grid md:grid-cols-3 gap-8 mb-12 text-center md:text-left items-center">
                 <div>
-                    <h3 class="font-bold text-lg mb-1">Md Mobashwer Ali</h3>
-                    <p class="text-slate-400 text-xs tracking-wide">HR Professional & Branding Strategist</p>
+                    <h3 class="font-extrabold text-lg mb-1">Md Mobashwer Ali</h3>
+                    <p class="text-slate-400 text-xs tracking-wide">Talent Acquisition & Strategic HR Specialist</p>
                 </div>
-                <div class="flex justify-center md:justify-start gap-6">
-                    <a href="https://wa.me/8801581045958" class="text-xl hover:text-green-500 transition"><i class="fab fa-whatsapp"></i></a>
-                    <a href="mailto:ali.epichr@hotmail.com" class="text-xl hover:text-red-500 transition"><i class="fas fa-envelope"></i></a>
-                    <a href="https://www.linkedin.com/in/mmobashwer" class="text-xl hover:text-blue-400 transition"><i class="fab fa-linkedin"></i></a>
+                <div class="flex justify-center md:justify-start gap-5">
+                    <a href="https://wa.me/8801581045958" class="w-10 h-10 rounded-xl bg-slate-800 border border-slate-700 flex items-center justify-center hover:bg-emerald-600 hover:border-emerald-600 transition text-lg"><i class="fab fa-whatsapp"></i></a>
+                    <a href="mailto:ali.epichr@hotmail.com" class="w-10 h-10 rounded-xl bg-slate-800 border border-slate-700 flex items-center justify-center hover:bg-red-600 hover:border-red-600 transition text-lg"><i class="fas fa-envelope"></i></a>
+                    <a href="https://www.linkedin.com/in/mmobashwer" class="w-10 h-10 rounded-xl bg-slate-800 border border-slate-700 flex items-center justify-center hover:bg-blue-600 hover:border-blue-600 transition text-lg"><i class="fab fa-linkedin-in"></i></a>
                 </div>
-                <div class="text-[10px] text-slate-500 uppercase tracking-widest font-bold">
-                    📍 Badarganj, Rangpur
+                <div class="text-right hidden md:block">
+                    <span class="text-xs text-slate-400 block"><i class="fas fa-map-marker-alt text-blue-500 mr-1"></i> Badarganj, Rangpur, Bangladesh</span>
                 </div>
             </div>
-            <div class="border-t border-white/10 pt-8 text-center">
-                <p class="text-[9px] text-slate-500 tracking-[0.4em] font-bold uppercase">&copy; 2026 Md Mobashwer Ali</p>
+            <div class="border-t border-slate-800 pt-8 text-center flex flex-col md:flex-row justify-between items-center text-xs text-slate-500">
+                <p>&copy; 2026 Md Mobashwer Ali. All rights reserved.</p>
+                <p class="mt-2 md:mt-0 uppercase tracking-widest text-[10px]">Designed for Talent Excellence</p>
             </div>
         </div>
     </footer>
 
-    <div class="md:hidden fixed bottom-0 left-0 w-full bg-white p-3 border-t flex gap-3 z-50 shadow-[0_-4px_6px_-1px_rgba(0,0,0,0.05)]">
-        <a href="https://wa.me/8801581045958" class="flex-1 bg-green-600 text-white py-3 rounded-lg flex items-center justify-center font-bold gap-2 text-xs">
-            <i class="fab fa-whatsapp"></i> WhatsApp
+    <!-- Mobile Sticky Action Bar -->
+    <div class="md:hidden fixed bottom-0 left-0 w-full bg-white/95 backdrop-blur-md p-3 border-t border-slate-200 flex gap-3 z-50 shadow-lg">
+        <a href="https://wa.me/8801581045958" class="flex-1 bg-emerald-600 text-white py-3 rounded-xl flex items-center justify-center font-bold gap-2 text-xs uppercase tracking-wider shadow-sm">
+            <i class="fab fa-whatsapp text-sm"></i> WhatsApp
         </a>
-        <a href="mailto:ali.epichr@hotmail.com" class="flex-1 bg-red-600 text-white py-3 rounded-lg flex items-center justify-center font-bold gap-2 text-xs">
-            <i class="fas fa-envelope"></i> Email
+        <a href="mailto:ali.epichr@hotmail.com" class="flex-1 bg-blue-600 text-white py-3 rounded-xl flex items-center justify-center font-bold gap-2 text-xs uppercase tracking-wider shadow-sm">
+            <i class="fas fa-envelope text-sm"></i> Email Me
         </a>
     </div>
 
+    <!-- Script -->
     <script>
         const btn = document.getElementById('menu-toggle');
         const menu = document.getElementById('mobile-menu');
         const links = document.querySelectorAll('.mobile-link');
 
-        // Toggle menu on hamburger click
         btn.addEventListener('click', () => menu.classList.toggle('open'));
 
-        // Automatically close mobile menu when any navigation link is tapped
         links.forEach(link => {
             link.addEventListener('click', () => {
                 menu.classList.remove('open');
